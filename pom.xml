@@ -163,7 +163,6 @@
       <url>http://192.168.33.10:8081/repository/maven-snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
-    ...
   </distributionManagement>
 
 
