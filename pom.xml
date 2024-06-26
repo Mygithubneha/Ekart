@@ -148,18 +148,23 @@
         </plugins>
     </build>
 
-         <distributionManagement>
+           <distributionManagement>
     <repository>
+      <uniqueVersion>false</uniqueVersion>
       <id>maven-releases</id>
       <name>maven-releases</name>
-      <url>http://3.108.254.192:8081/repository/maven-releases/</url>
+      <url>http://192.168.33.10:8081/repository/maven-releases/</url>
+      <layout>default</layout>
     </repository>
     <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
       <id>maven-snapshots</id>
       <name>maven-snapshots</name>
-      <url>http://3.108.254.192:8081/repository/maven-snapshots/</url>
+      <url>http://192.168.33.10:8081/repository/maven-snapshots/</url>
+      <layout>legacy</layout>
     </snapshotRepository>
-</distributionManagement>
+    ...
+  </distributionManagement>
 
 
 </project>
